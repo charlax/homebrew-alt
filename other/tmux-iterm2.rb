@@ -1,9 +1,14 @@
 require 'formula'
 
 class TmuxIterm2 < Formula
-  url 'http://iterm2.googlecode.com/files/iTerm2-1_0_0_20120726.zip'
-  md5 '596c8ff70a836f67ee3197bb60cf92b3'
+  url 'http://iterm2.googlecode.com/files/tmux-for-iTerm2-20120203.tar.gz'
+  md5 '59305a26bdd0245054fe719e6b2a960e'
   homepage 'http://github.com/gnachman/tmux2'
+  
+  devel do
+    url "https://github.com/gnachman/tmux2/zipball/c4ba1de2fdb9a591ccd7e9f5ca2ef33e67eae618"
+    sha1 "a5f471d29aa181889b2460da994ef86e879e8bd8"
+  end
 
   depends_on 'libevent'
 
